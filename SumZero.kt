@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/
 fun sumZero(n: Int): IntArray {
     var res: IntArray = IntArray(n)
     for (i in 1..n / 2) {
