@@ -1,8 +1,10 @@
 //https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
 fun finalPrices(prices: IntArray): IntArray {
+    
     var res = IntArray(prices.size)
-
+    
     for (i in prices.indices) {
+        
         var curr = prices[i]
         var j = i + 1
 
@@ -20,7 +22,6 @@ fun finalPrices(prices: IntArray): IntArray {
                 j++
             }
         }
-
     }
     return res
 }
