@@ -2,7 +2,6 @@
 fun reverseWords(s: String): String {
     var res = ""
     s.replace("//s+".toRegex(), " ").split(" ").forEach { word ->
-
         res += word.reversed()
         res += " "
     }
