@@ -5,7 +5,6 @@ fun numUniqueEmails(emails: Array<String>): Int {
         var (localName, domainName) = email.split("@")
         res.add("${localName.replace(".", "").replaceAfter("+", "").replace("+", "")}@$domainName")
     }
-    res.forEach(::println)
     return res.size
 }
 
