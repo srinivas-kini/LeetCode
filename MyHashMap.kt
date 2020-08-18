@@ -1,3 +1,4 @@
+https://leetcode.com/problems/design-hashmap/
 class MyHashMap() {
 
     /** Initialize your data structure here. */
