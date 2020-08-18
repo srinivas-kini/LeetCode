@@ -1,10 +1,9 @@
 //https://leetcode.com/problems/count-largest-group/
 fun countLargestGroup(n: Int): Int {
-    var res = 0
     val mp = mutableMapOf<Int, MutableList<Int>>()
 
     for (i in 1..n) {
-        val digitSum = getSumOfDigits(i)
+        var digitSum = getSumOfDigits(i)
         if (!mp.containsKey(digitSum))
             mp[digitSum] = mutableListOf(i)
         else
@@ -12,11 +11,7 @@ fun countLargestGroup(n: Int): Int {
 
     }
     val mxCount = mp.values.maxBy { it.size }?.count() ?: 1
-    mp.values.forEach {
-        if (it.size == mxCount)
-            res++
-    }
-    return res
+    return mp.values.filter { it.size == mxCount }.count()
 }
 
 fun getSumOfDigits(i: Int): Int {
@@ -29,5 +24,4 @@ fun getSumOfDigits(i: Int): Int {
     }
     return sumOfDigits
 }
-
 
