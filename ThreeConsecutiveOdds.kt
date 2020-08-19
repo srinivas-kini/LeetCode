@@ -4,8 +4,8 @@ fun threeConsecutiveOdds(arr: IntArray): Boolean {
     for (i in arr.indices)
         if (arr[i] % 2 != 0) {
             count++
-            if (count == 3) break
+            if (count == 3) return true
         } else count = 0
-    return count == 3
+    return false
 }
 
