@@ -5,6 +5,6 @@ fun isPrefixOfWord(sentence: String, searchWord: String): Int {
         if (words[i].startsWith(searchWord))
             return i + 1
     }
-    return 0
+    return -1
 }
 
