@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/contains-duplicate/
 fun containsDuplicate(nums: IntArray): Boolean {
     var set = mutableSetOf<Int>()
     nums.forEach { num ->
