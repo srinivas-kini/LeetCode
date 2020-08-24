@@ -20,6 +20,3 @@ fun firstUniqChar(s: String): Int {
     return -1
 }
 
-fun main() {
-    firstUniqChar("aadadaad").also(::println)
-}
