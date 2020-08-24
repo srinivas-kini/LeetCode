@@ -17,7 +17,5 @@ fun canConstruct(ransomNote: String, magazine: String): Boolean {
     return res == ransomNote
 }
 
-fun main() {
-    canConstruct("bg", "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj").also(::println)
-}
+
 
