@@ -4,7 +4,7 @@ fun simplifiedFractions(n: Int): List<String> {
     if (n <= 1) return emptyList()
 
     val res = mutableListOf<String>()
-    val s = mutableListOf<Double>()
+    val s = mutableSetOf<Double>()
     var denominator = 2
 
     while (denominator <= n) {
