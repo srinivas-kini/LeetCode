@@ -1,4 +1,4 @@
-https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+//https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
 fun maxDepth(root: Node?): Int {
     if (root == null) return 0
     var max = 0
