@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/thousand-separator/
 fun thousandSeparator(n: Int): String {
 
     if (n <= 999) return n.toString()
