@@ -26,8 +26,4 @@ class Solution:
     def _combine_pairs(self, list1, list2):
         if len(list1) == 0:
             return list2
-        op = []
-        for l1 in list1:
-            for l2 in list2:
-                op.append(l1 + l2)
-        return op
+        return [(l1+l2) for l1 in list1 for l2 in list2]
