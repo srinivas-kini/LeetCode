@@ -18,12 +18,10 @@ class Solution:
             return []
         if len(digits) == 1:
             return digit_dict[digits]
-        dp = []
-        for digit in digits:
-            dp = self._combine_pairs(dp, digit_dict[digit])
+        dp = digit_dict[digits[0]]
+        for i in range(1, len(digits)):
+            dp = self._combine_pairs(dp, digit_dict[digits[i]])
         return dp
 
     def _combine_pairs(self, list1, list2):
-        if len(list1) == 0:
-            return list2
-        return [(l1+l2) for l1 in list1 for l2 in list2]
+        return [(l1 + l2) for l1 in list1 for l2 in list2]
