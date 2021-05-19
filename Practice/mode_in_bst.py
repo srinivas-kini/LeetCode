@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/find-mode-in-binary-search-tree/submissions/
+# https://leetcode.com/problems/find-mode-in-binary-search-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, val=0, left=None, right=None):
