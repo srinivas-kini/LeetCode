@@ -19,10 +19,10 @@ class Solution:
             return
         
         if root.left:
-            self.leaf_sum(root.left,level+1)
+            self.dls(root.left,level+1)
         
         if root.right:
-            self.leaf_sum(root.right,level+1)
+            self.dls(root.right,level+1)
             
         
     
