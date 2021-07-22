@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+# This approach also works for https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 class Solution:
     def connect(self, root: 'Node') -> 'Node':
         if not root:
