@@ -11,15 +11,9 @@ class Solution:
         
         def dfs(r,c):
             
-            if (r,c) in visited:
+            if ((r,c) in visited) or (not in_bounds(r,c)) or (grid[r][c]=="0"):
                 return 
-            
-            if not in_bounds(r,c):
-                return
-            
-            if grid[r][c] == "0":
-                return 
-            
+        
             visited.add((r,c))
             
             dfs(r-1,c)
